@@ -2,7 +2,10 @@
   "name": "vite-plugin-pdf",
   "version": "0.0.0",
   "description": "Export PDF",
-  "keywords": ["vite", "pdf"],
+  "keywords": [
+    "vite",
+    "pdf"
+  ],
   "homepage": "https://github.com/yjl9903/vite-plugin-pdf#readme",
   "bugs": {
     "url": "https://github.com/yjl9903/vite-plugin-pdf/issues"
@@ -38,6 +41,9 @@
     "unbuild": "^0.8.9",
     "vite": "^3.0.9",
     "vitest": "^0.22.1"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.9"
   },
   "engines": {
     "node": ">=v16.16.0"
