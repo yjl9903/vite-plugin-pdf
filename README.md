@@ -2,7 +2,7 @@
 
 :construction: Work in progress.
 
-Export PDF.
+Export PDF bundled by Vite.
 
 ## License
 

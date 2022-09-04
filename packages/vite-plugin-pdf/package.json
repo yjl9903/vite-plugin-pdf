@@ -1,9 +1,10 @@
 {
   "name": "vite-plugin-pdf",
   "version": "0.0.0",
-  "description": "Export PDF",
+  "description": "Export PDF bundled by Vite",
   "keywords": [
     "vite",
+    "vite-plugin",
     "pdf"
   ],
   "homepage": "https://github.com/yjl9903/vite-plugin-pdf#readme",
