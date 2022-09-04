@@ -49,5 +49,8 @@
   },
   "engines": {
     "node": ">=v16.17.0"
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0"
   }
 }
