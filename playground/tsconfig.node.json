@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "vite-plugin-pdf": ["../packages/vite-plugin-pdf/src/index.ts"]
+    }
+  },
+  "include": ["./vite.config.ts"]
+}
