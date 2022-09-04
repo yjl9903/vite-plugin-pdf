@@ -6,6 +6,26 @@
 
 Export PDF bundled by Vite.
 
+## Installation
+
+```bash
+npm i -D puppeteer vite-plugin-pdf
+```
+
+```ts
+// vite.config.ts
+
+import { defineConfig } from 'vite';
+
+import PDF from 'vite-plugin-pdf';
+
+export default defineConfig({
+  plugins: [
+    PDF({})
+  ]
+});
+```
+
 ## License
 
 MIT License © 2021 [XLor](https://github.com/yjl9903)
