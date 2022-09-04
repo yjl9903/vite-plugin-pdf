@@ -4,6 +4,7 @@ import { preview } from 'vite';
 import type { UserConfig } from './types';
 
 export async function exportPDF(option: Required<UserConfig>) {
+  console.log();
   info(colors.yellow('Export PDF...'));
   info(colors.yellow('Create preview server...'));
 
