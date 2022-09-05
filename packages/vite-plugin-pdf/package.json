@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-pdf",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Export PDF bundled by Vite",
   "keywords": [
     "vite",
