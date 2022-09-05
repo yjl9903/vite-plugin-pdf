@@ -44,7 +44,7 @@
     "@types/node": "^18.0.0",
     "unbuild": "^0.8.10",
     "vite": "^3.0.9",
-    "vitest": "^0.23.0"
+    "vitest": "^0.23.1"
   },
   "peerDependencies": {
     "playwright": "^1.25.1",
