@@ -29,3 +29,8 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: pdf
+          path: playground/dist/*.pdf
