@@ -4,11 +4,11 @@ import { preview } from 'vite';
 
 import type { PageConfig, UserConfig } from './types';
 
-import { info } from './utils';
+import { info, println } from './utils';
 
 export async function exportPDF(option: Required<UserConfig>) {
   console.log();
-  info(colors.yellow('Export PDF...'));
+  info(colors.yellow('Start exporting PDFs...'));
 
   if (!option.pages) {
     return;
@@ -38,20 +38,27 @@ export async function exportPDF(option: Required<UserConfig>) {
       baseURL,
       deviceScaleFactor: 1
     });
-    info(colors.green('Browser is launched.'));
+    info(
+      colors.green(`Browser is launched. (${browser.browserType().name()} ${browser.version()})`)
+    );
 
     const page = await context.newPage();
 
+    info(`${colors.yellow('Exporting PDFs...')} ${colors.blue(`(${pages.length})`)}`);
     for (const p of pages) {
       await page.goto(p.url, { waitUntil: 'networkidle' });
-      await page.pdf({ ...option.pdf, path: path.join(option.outDir, p.name) });
+      const output = path.join(option.outDir, p.name);
+      await page.pdf({ ...option.pdf, path: output });
+      println(
+        `${colors.cyan(p.url)} -> ${path.dirname(output)}/${colors.cyan(path.basename(output))}`
+      );
     }
     browser.close();
   }
 
   server.httpServer.close();
 
-  info(colors.green('Export PDF finished.'));
+  info(colors.green('Export PDFs finished.'));
 }
 
 async function launch() {
