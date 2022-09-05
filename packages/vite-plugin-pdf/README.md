@@ -2,14 +2,12 @@
 
 [![version](https://img.shields.io/npm/v/vite-plugin-pdf?color=rgb%2850%2C203%2C86%29&label=vite-plugin-pdf)](https://www.npmjs.com/package/vite-plugin-pdf) [![CI](https://github.com/yjl9903/vite-plugin-pdf/actions/workflows/ci.yml/badge.svg)](https://github.com/yjl9903/vite-plugin-pdf/actions/workflows/ci.yml)
 
-:construction: Work in progress.
-
 Export PDF bundled by Vite.
 
 ## Installation
 
 ```bash
-npm i -D puppeteer vite-plugin-pdf
+npm i -D playwright vite-plugin-pdf
 ```
 
 ```ts
@@ -21,7 +19,13 @@ import PDF from 'vite-plugin-pdf';
 
 export default defineConfig({
   plugins: [
-    PDF({})
+    /**
+     * It will generate a pdf at './index.pdf' for the index page ('/') of your app
+     */
+    PDF({
+      outDir: './',
+      pages: '/'
+    })
   ]
 });
 ```
