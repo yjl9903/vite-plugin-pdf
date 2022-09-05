@@ -20,7 +20,9 @@ jobs:
           cache: pnpm
 
       - name: Install
-        run: pnpm install
+        run: |
+          pnpm install
+          npx playwright install
 
       - name: Build
         run: pnpm build:play
