@@ -9,10 +9,10 @@ export default defineConfig({
       page: '/',
       pdf: {
         margin: {
-          left: 0,
-          top: 0,
-          right: 0,
-          bottom: 0
+          top: '2.97cm',
+          left: '2.1cm',
+          bottom: '2.97cm',
+          right: '2.1cm'
         }
       }
     }),
