@@ -15,8 +15,8 @@
   "devDependencies": {
     "@types/node": "^18.0.0",
     "bumpp": "latest",
+    "playwright": "^1.25.1",
     "prettier": "latest",
-    "puppeteer": "^17.1.0",
     "turbo": "latest",
     "typescript": "^4.8.2",
     "unbuild": "^0.8.10",

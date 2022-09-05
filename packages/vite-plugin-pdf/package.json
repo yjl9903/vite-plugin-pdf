@@ -37,6 +37,9 @@
     "test:ci": "vitest --run",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "picocolors": "^1.0.0"
+  },
   "devDependencies": {
     "@types/node": "^18.0.0",
     "unbuild": "^0.8.10",
@@ -44,13 +47,10 @@
     "vitest": "^0.23.0"
   },
   "peerDependencies": {
-    "puppeteer": "^17.1.0",
+    "playwright": "^1.25.1",
     "vite": "^3.0.9"
   },
   "engines": {
     "node": ">=v16.17.0"
-  },
-  "dependencies": {
-    "picocolors": "^1.0.0"
   }
 }
