@@ -6,7 +6,7 @@ import Info from 'vite-plugin-info';
 export default defineConfig({
   plugins: [
     PDF({
-      page: '/',
+      pages: '/',
       pdf: {
         margin: {
           top: '2.97cm',

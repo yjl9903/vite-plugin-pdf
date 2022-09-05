@@ -3,7 +3,7 @@ import type { Page } from 'playwright';
 export interface UserConfig {
   outDir?: string;
 
-  page: string | PDFConfig | string[] | PDFConfig[];
+  pages: string | PageConfig | string[] | PageConfig[];
 
   /**
    * Options passed to page.pdf()
@@ -11,7 +11,7 @@ export interface UserConfig {
   pdf?: Omit<Parameters<Page['pdf']>[0], 'path'>;
 }
 
-export interface PDFConfig {
+export interface PageConfig {
   /**
    * Exported PDF filename
    *
