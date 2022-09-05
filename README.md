@@ -9,7 +9,7 @@ Export PDF bundled by Vite.
 ## Installation
 
 ```bash
-npm i -D puppeteer vite-plugin-pdf
+npm i -D playwright vite-plugin-pdf
 ```
 
 ```ts
