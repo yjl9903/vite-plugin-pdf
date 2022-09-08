@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@types/node': ^18.0.0
       bumpp: latest
-      playwright: ^1.25.1
+      playwright: ^1.25.2
       prettier: latest
       turbo: latest
       typescript: ^4.8.2
@@ -16,7 +16,7 @@ importers:
     devDependencies:
       '@types/node': 18.0.0
       bumpp: 8.2.1
-      playwright: 1.25.1
+      playwright: 1.25.2
       prettier: 2.7.1
       turbo: 1.4.5
       typescript: 4.8.2
@@ -41,12 +41,12 @@ importers:
 
   playground:
     specifiers:
-      playwright: ^1.25.1
+      playwright: ^1.25.2
       vite: ^3.1.0
       vite-plugin-info: 0.3.1
       vite-plugin-pdf: workspace:*
     devDependencies:
-      playwright: 1.25.1
+      playwright: 1.25.2
       vite: 3.1.0
       vite-plugin-info: 0.3.1_vite@3.1.0
       vite-plugin-pdf: link:../packages/vite-plugin-pdf
@@ -1489,19 +1489,19 @@ packages:
       pathe: 0.3.5
     dev: true
 
-  /playwright-core/1.25.1:
-    resolution: {integrity: sha512-lSvPCmA2n7LawD2Hw7gSCLScZ+vYRkhU8xH0AapMyzwN+ojoDqhkH/KIEUxwNu2PjPoE/fcE0wLAksdOhJ2O5g==}
+  /playwright-core/1.25.2:
+    resolution: {integrity: sha512-0yTbUE9lIddkEpLHL3u8PoCL+pWiZtj5A/j3U7YoNjcmKKDGBnCrgHJMzwd2J5vy6l28q4ki3JIuz7McLHhl1A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
 
-  /playwright/1.25.1:
-    resolution: {integrity: sha512-kOlW7mllnQ70ALTwAor73q/FhdH9EEXLUqjdzqioYLcSVC4n4NBfDqeCikGuayFZrLECLkU6Hcbziy/szqTXSA==}
+  /playwright/1.25.2:
+    resolution: {integrity: sha512-RwMB5SFRV/8wSfK+tK8ycpqdzORvoqUNz9DUeRfSgZFrZej5uuBl9wFjWcc+OkXFEtaPmx1acAVGG7hA4IJ1kg==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.25.1
+      playwright-core: 1.25.2
     dev: true
 
   /postcss/8.4.16:
