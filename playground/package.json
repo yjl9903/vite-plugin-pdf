@@ -9,7 +9,7 @@
   "devDependencies": {
     "playwright": "^1.25.2",
     "vite": "^3.1.4",
-    "vite-plugin-info": "0.3.1",
+    "vite-plugin-info": "0.4.0",
     "vite-plugin-pdf": "workspace:*"
   }
 }
