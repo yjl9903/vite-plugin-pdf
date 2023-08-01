@@ -30,8 +30,8 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       vite:
-        specifier: ^4.3.8
-        version: 4.3.8(@types/node@18.17.1)
+        specifier: ^4.4.8
+        version: 4.4.8(@types/node@18.17.1)
       vitest:
         specifier: ^0.33.0
         version: 0.33.0(playwright@1.34.3)
@@ -52,8 +52,8 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       vite:
-        specifier: ^4.3.8
-        version: 4.3.8(@types/node@18.17.1)
+        specifier: ^4.4.8
+        version: 4.4.8(@types/node@18.17.1)
       vitest:
         specifier: ^0.33.0
         version: 0.33.0(playwright@1.34.3)
@@ -64,11 +64,11 @@ importers:
         specifier: ^1.34.3
         version: 1.34.3
       vite:
-        specifier: ^4.3.8
-        version: 4.3.8(@types/node@18.17.1)
+        specifier: ^4.4.8
+        version: 4.4.8(@types/node@18.17.1)
       vite-plugin-info:
         specifier: 0.4.1
-        version: 0.4.1(vite@4.3.8)
+        version: 0.4.1(vite@4.4.8)
       vite-plugin-pdf:
         specifier: workspace:*
         version: link:../packages/vite-plugin-pdf
@@ -2141,10 +2141,11 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.3.8(@types/node@18.17.1)
+      vite: 4.4.8(@types/node@18.17.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
+      - lightningcss
       - sass
       - stylus
       - sugarss
@@ -2152,7 +2153,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-info@0.4.1(vite@4.3.8):
+  /vite-plugin-info@0.4.1(vite@4.4.8):
     resolution: {integrity: sha512-CP+B3N1+tdEM/o2Cu3kQpU7H/qABvNb5GqDVsbuH3ICJfdUyHn8xCZPEVQ5dB8/gr/vzFnzRoPbX2YcZQzG7jQ==}
     peerDependencies:
       vite: ^2.9.13 || ^3.0.0 || ^4.0.0
@@ -2161,16 +2162,17 @@ packages:
       git-repo-info: 2.1.1
       parse-github-url: 1.0.2
       remote-origin-url: 2.0.0
-      vite: 4.3.8(@types/node@18.17.1)
+      vite: 4.4.8(@types/node@18.17.1)
     dev: true
 
-  /vite@4.3.8(@types/node@18.17.1):
-    resolution: {integrity: sha512-uYB8PwN7hbMrf4j1xzGDk/lqjsZvCDbt/JC5dyfxc19Pg8kRm14LinK/uq+HSLNswZEoKmweGdtpbnxRtrAXiQ==}
+  /vite@4.4.8(@types/node@18.17.1):
+    resolution: {integrity: sha512-LONawOUUjxQridNWGQlNizfKH89qPigK36XhMI7COMGztz8KNY0JHim7/xDd71CZwGT4HtSRgI7Hy+RlhG0Gvg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
       '@types/node': '>= 14'
       less: '*'
+      lightningcss: ^1.21.0
       sass: '*'
       stylus: '*'
       sugarss: '*'
@@ -2179,6 +2181,8 @@ packages:
       '@types/node':
         optional: true
       less:
+        optional: true
+      lightningcss:
         optional: true
       sass:
         optional: true
@@ -2190,7 +2194,7 @@ packages:
         optional: true
     dependencies:
       '@types/node': 18.17.1
-      esbuild: 0.17.19
+      esbuild: 0.18.17
       postcss: 8.4.27
       rollup: 3.27.0
     optionalDependencies:
@@ -2250,11 +2254,12 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.6.0
-      vite: 4.3.8(@types/node@18.17.1)
+      vite: 4.4.8(@types/node@18.17.1)
       vite-node: 0.33.0(@types/node@18.17.1)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
+      - lightningcss
       - sass
       - stylus
       - sugarss
