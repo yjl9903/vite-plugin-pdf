@@ -15,7 +15,7 @@
   "devDependencies": {
     "@types/node": "^18.17.3",
     "bumpp": "latest",
-    "playwright": "^1.36.2",
+    "playwright": "^1.37.0",
     "prettier": "latest",
     "turbo": "latest",
     "typescript": "^5.1.6",
